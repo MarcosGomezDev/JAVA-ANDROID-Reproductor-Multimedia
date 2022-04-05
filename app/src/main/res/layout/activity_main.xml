@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#013863"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="411dp"
+        android:layout_height="473dp"
+        android:layout_marginTop="55dp"
+        android:background="#013863"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="208dp"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/btPlayPause"
+                android:layout_width="wrap_content"
+                android:layout_height="172dp"
+                android:layout_weight="1"
+                android:backgroundTint="#252525"
+                android:foregroundTintMode="add"
+                android:hapticFeedbackEnabled="true"
+                android:onClick="onClick"
+                app:srcCompat="@drawable/outline_play_circle_filled_white_48"
+                tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+
+            <ImageButton
+                android:id="@+id/btRec"
+                android:layout_width="wrap_content"
+                android:layout_height="172dp"
+                android:layout_weight="1"
+                android:backgroundTint="#252525"
+                android:onClick="onClick"
+                app:srcCompat="@drawable/outline_fiber_manual_record_white_48"
+                tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="179dp"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/btRewind"
+                android:layout_width="wrap_content"
+                android:layout_height="169dp"
+                android:layout_weight="1"
+                android:backgroundTint="#252525"
+                android:onClick="onClick"
+                app:srcCompat="@drawable/outline_replay_5_white_48"
+                tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+            <ImageButton
+                android:id="@+id/btAdvance"
+                android:layout_width="wrap_content"
+                android:layout_height="169dp"
+                android:layout_weight="1"
+                android:backgroundTint="#252525"
+                android:onClick="onClick"
+                app:srcCompat="@drawable/outline_forward_5_white_48"
+                tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+        </LinearLayout>
+
+        <ImageButton
+            android:id="@+id/btSalir"
+            android:layout_width="match_parent"
+            android:layout_height="125dp"
+            android:layout_weight="1"
+            android:backgroundTint="#252525"
+            android:onClick="onClick"
+            app:srcCompat="@drawable/outline_exit_to_app_white_48"
+            tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
